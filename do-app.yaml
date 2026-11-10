@@ -1,0 +1,9 @@
+name: madarps
+static_sites:
+  - name: web-frontend
+    github:
+      repo: logisitinagl-web/madarps
+      branch: main
+      deploy_on_push: true
+    build_command: npm install && npm run build
+    output_dir: dist
